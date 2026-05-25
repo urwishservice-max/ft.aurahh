@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FT.AURAH._ | Cinematic Editing</title>
+    <meta name="description" content="Portfolio of FT.AURAH._ - Posters, Reels, and Cinematic Visuals.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    
+    <nav class="navbar">
+        <div class="logo">FT.AURAH._</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#posters">Posters</a></li>
+            <li><a href="#reels">Reels</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="FT.AURAH._">FT.AURAH._</h1>
+                <p class="subtitle">Mastering the Art of Visual Storytelling.</p>
+                <a href="#posters" class="cta-btn">Explore My Work</a>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll Down</span>
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <section id="posters" class="portfolio-section hidden">
+            <div class="section-header">
+                <h2>Epic Posters</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid-container">
+                <div class="card poster-card">
+                    <img src="assets/poster_sci_fi.png" alt="Sci-Fi Poster" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2564&auto=format&fit=crop'">
+                    <div class="card-overlay">
+                        <h3>Sci-Fi Odyssey</h3>
+                        <p>Cinematic Poster Design</p>
+                    </div>
+                </div>
+                <div class="card poster-card">
+                    <img src="assets/poster_cyberpunk.png" alt="Cyberpunk Poster" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1605810230434-7631ac76ec81?q=80&w=2670&auto=format&fit=crop'">
+                    <div class="card-overlay">
+                        <h3>Neon Nights</h3>
+                        <p>VFX & Retouching</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reels" class="portfolio-section hidden">
+            <div class="section-header">
+                <h2>Dynamic Reels</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid-container reels-grid">
+                <div class="card reel-card">
+                    <img src="assets/reel_automotive.png" alt="Automotive Reel" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2783&auto=format&fit=crop'">
+                    <div class="play-btn"></div>
+                    <div class="card-overlay">
+                        <h3>Night Drive</h3>
+                        <p>Automotive Edit</p>
+                    </div>
+                </div>
+                <div class="card reel-card">
+                    <img src="assets/reel_action.png" alt="Action Reel" class="card-img" onerror="this.src='https://images.unsplash.com/photo-1576400883215-7083980b6193?q=80&w=2626&auto=format&fit=crop'">
+                    <div class="play-btn"></div>
+                    <div class="card-overlay">
+                        <h3>Adrenaline Rush</h3>
+                        <p>Action Montage</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section hidden">
+            <h2>Ready to collaborate?</h2>
+            <p>Let's create something extraordinary together.</p>
+            <a href="mailto:contact@ftaurah.com" class="cta-btn cta-outline">Get In Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FT.AURAH._. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
