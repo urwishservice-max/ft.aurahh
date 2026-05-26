@@ -4,6 +4,8 @@ import { Film, MonitorPlay, Zap, ArrowRight, Aperture, CheckCircle, Crosshair, C
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Particles from './Particles';
+import ButterflyCanvas from './ButterflyCanvas';
+import ErrorBoundary from './ErrorBoundary';
 import heroImg from './assets/aurah_hero.png';
 
 function Home() {
@@ -141,6 +143,11 @@ function Home() {
           </motion.button>
         </Link>
       </motion.section>
+
+      {/* 3D Animated Butterfly Section */}
+      <ErrorBoundary>
+        <ButterflyCanvas />
+      </ErrorBoundary>
 
       {/* About Section */}
       <section className="section-container" style={{ position: 'relative', zIndex: 10, perspective: '1000px', paddingBottom: '2rem' }}>
